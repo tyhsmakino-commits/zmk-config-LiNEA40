@@ -142,6 +142,7 @@
 
         // 0: letters as printed on the keycaps
         default_layer {
+            display-name = "Base";
             bindings = <
 &kp Q      &kp W      &kp E     &kp R       &kp T                                    &kp Y  &kp U  &kp I      &kp O     &kp P
 &kp A      &kp S      &kp D     &kp F       &kp G                                    &kp H  &kp J  &kp K      &kp L     &kp ESC
@@ -154,6 +155,7 @@
 
         // 1: switched on automatically while the trackball moves
         MOUSE {
+            display-name = "Mouse";
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &trans  &trans  &trans
@@ -164,6 +166,7 @@
 
         // 2: hold the dot key (left thumb). Numbers and symbols. "go" becomes Shift.
         NUM {
+            display-name = "Num+Sym";
             bindings = <
 &kp N1   &us_n2  &kp N3  &kp N4  &kp N5                       &us_n6    &us_n7   &us_n8    &us_n9    &us_n0
 &us_grv  &trans  &trans  &trans  &trans                       &us_mins  &us_eql  &us_lbkt  &us_rbkt  &us_bsls
@@ -176,6 +179,7 @@
 
         // 3: hold "go" (right thumb). F keys and cursor keys. Knob scrolls sideways.
         NAV {
+            display-name = "Fn+Nav";
             bindings = <
 &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                      &kp F6    &kp F7     &kp F8     &kp F9     &kp F10
 &kp F11  &kp F12  &trans  &trans  &trans                      &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
@@ -188,6 +192,7 @@
 
         // 4: hold Tab. Bluetooth, ZMK Studio unlock, bootloader.
         SYS {
+            display-name = "System";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &bt BT_CLR  &bt BT_CLR_ALL  &none           &none  &bootloader
 &none         &none         &none         &none         &none                         &none       &none           &none           &none  &none
