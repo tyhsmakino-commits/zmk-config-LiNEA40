@@ -135,6 +135,7 @@
         MM(us_lbkt, &kp RBKT,      &kp LS(RBKT))   // [  {
         MM(us_rbkt, &kp BSLH,      &kp LS(BSLH))   // ]  }
         MM(us_bsls, &kp INT3,      &kp LS(INT3))   // \  |
+        MM(bar_esc, &kp MINUS,     &kp ESC)        // long vowel mark (-), Shift = Esc
     };
 
     keymap {
@@ -147,7 +148,7 @@
 &kp Q      &kp W      &kp E     &kp R       &kp T                                    &kp Y  &kp U  &kp I      &kp O     &kp P
 &kp A      &kp S      &kp D     &kp F       &kp G                                    &kp H  &kp J  &kp K      &kp L     &kp BSPC
 &kp Z      &kp X      &kp C     &kp V       &kp B                                    &kp N  &kp M  &us_quot   &us_semi  &kp SLASH
-&kp LCTRL  &kp LSHFT  &kp LALT  &kp C_MUTE  &lt NUM SPACE  &mt LGUI GRAVE    &lt NAV ENTER  &lt SYS TAB       &kp COMMA  &kp DOT   &kp ESC
+&kp LSHFT  &kp LCTRL  &kp LALT  &kp C_MUTE  &lt NUM SPACE  &mt LGUI GRAVE    &lt NAV ENTER  &lt SYS TAB       &kp COMMA  &kp DOT   &bar_esc
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
